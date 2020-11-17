@@ -1,0 +1,12 @@
+# Normal Desktop
+#@lxpanel --profile LXDE-pi
+#@pcmanfm --desktop --profile LXDE-pi
+#@xscreensaver -no-splash
+#@point-rpi
+
+# Chrome Autostart
+@xscreensaver -no-splash
+@xset s off
+@xset -dpms
+@xset s noblank
+@chromium-browser --noerrdialogs --kiosk https://iotplotter.com/user/feed/731013254453670657 --incognito
