@@ -9,7 +9,7 @@ Restart=always
 RestartSec=10
 User=robot
 WorkingDirectory=/home/pi/sensor
-ExecStart=/home/pi/sensor/sensor.sh
+ExecStart=/home/pi/sensor/autoupdate.sh
 EnvironmentFile=/home/pi/sensor/.env
 
 [Install]
