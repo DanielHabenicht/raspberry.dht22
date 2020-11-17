@@ -18,6 +18,6 @@ fi
 chmod u+x autoupdate.sh
 
 chmod +x sensor.py
-python ./sensor.py
+python3 ./sensor.py
 
 }
