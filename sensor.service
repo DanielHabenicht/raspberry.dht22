@@ -1,0 +1,16 @@
+[Unit]
+Description=Sensor Service for sending sensor data to remote
+After=network-online.target
+StartLimitIntervalSec=0
+
+[Service]
+Type=simple
+Restart=always
+RestartSec=10
+User=robot
+WorkingDirectory=/home/pi/sensor
+ExecStart=/home/pi/sensor/sensor.sh
+EnvironmentFile=/home/pi/sensor/.env
+
+[Install]
+WantedBy=multi-user.target
